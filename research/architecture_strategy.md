@@ -61,7 +61,7 @@ Project Chimera adopts a **Hierarchical Swarm** pattern composed of specialized 
 
 ### 2.4 Agent Interaction Diagram
 
-```mermaid
+'''mermaid
 flowchart TD
     Governor --> Research
     Research --> Content

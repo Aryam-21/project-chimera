@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Virtual Environments
+.venv/
+chimera-env/
+env/
+venv/
+*.egg-info/
+
+# Distribution / Packaging
+build/
+dist/
+*.egg
+*.whl
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# pip cache
+pip-wheel-metadata/

@@ -1,4 +1,3 @@
-```md
 # OpenClaw Integration Plan
 
 ## Purpose

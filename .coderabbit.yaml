@@ -1,0 +1,35 @@
+version: 1
+
+review:
+  rules:
+    - name: Spec Alignment Enforcement
+      description: >
+        Ensure all code changes align with specifications defined in the specs/ directory.
+      instructions:
+        - NEVER approve code that violates specs/_meta.md, functional.md, or technical.md
+        - Flag any implementation added without a corresponding spec update
+        - Require spec references in pull request descriptions
+
+    - name: Security & Safety Review
+      description: >
+        Identify security risks and unsafe patterns in agent-based systems.
+      instructions:
+        - Flag hardcoded secrets, tokens, or credentials
+        - Review external API calls for missing validation
+        - Highlight unsafe autonomous behaviors (self-modifying logic, unbounded loops)
+
+    - name: Agent Governance Compliance
+      description: >
+        Ensure agent code respects governance and HITL constraints.
+      instructions:
+        - Verify Governor Agent authority is not bypassed
+        - Ensure safety checks exist before execution
+        - Flag missing confidence thresholds or escalation paths
+
+  tone:
+    style: professional
+    strictness: high
+    verbosity: medium
+
+  approval:
+    require_human_review: true
